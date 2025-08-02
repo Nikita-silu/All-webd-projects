@@ -1,0 +1,112 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container box */
+#container {
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px 25px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Heading */
+#container h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #00c6ff;
+}
+
+/* Input field and button */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+#get-weather-btn {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#get-weather-btn:hover {
+    background: linear-gradient(to right, #005bea, #00c6ff);
+}
+
+/* Weather info display */
+#weather-info h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#weather-info p {
+    font-size: 18px;
+    margin: 4px 0;
+}
+
+/* Error message */
+#error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Hide by default */
+.hidden {
+    display: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+    #container {
+        padding: 20px 15px;
+    }
+
+    #container h1 {
+        font-size: 22px;
+    }
+
+    #weather-info h2 {
+        font-size: 20px;
+    }
+
+    #weather-info p {
+        font-size: 16px;
+    }
+}
