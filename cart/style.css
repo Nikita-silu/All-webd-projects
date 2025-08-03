@@ -1,0 +1,147 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6f0ff;
+  color: #333;
+  padding: 20px;
+}
+
+/* Container styling */
+.container {
+  max-width: 960px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Product list container */
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* Individual product box */
+.product {
+  flex: 1 1 220px;
+  background-color: #f7faff;
+  border: 1px solid #ccd9f2;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-4px);
+}
+
+/* Product name and price span */
+.product span {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Add to cart button */
+.product button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.product button:hover {
+  background-color: #0056b3;
+}
+
+/* Cart items section */
+#cart-items {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-item span {
+  font-weight: bold;
+}
+
+/* Cart total */
+#cart-total {
+  text-align: right;
+}
+
+#cart-total p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#checkout-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#checkout-btn:hover {
+  background-color: #218838;
+}
+
+/* Hidden utility */
+.hidden {
+  display: none;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  #product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+}
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.remove-btn:hover {
+  background-color: #c82333;
+}
