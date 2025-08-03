@@ -1,0 +1,113 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  background-color: #1e1e1e;
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+/* Form */
+#expense-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#expense-form input {
+  flex: 1 1 140px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+#expense-form button {
+  background-color: #a855f7;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 14px;
+}
+
+#expense-form button:hover {
+  background-color: #9333ea;
+}
+
+/* Expense List */
+#expense-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+#expense-list li {
+  background-color: #2f2f2f;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#expense-list li span {
+  font-weight: bold;
+}
+
+#expense-list li button {
+  background-color: #8b5cf6;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#expense-list li button:hover {
+  background-color: #7c3aed;
+}
+
+/* Total Section */
+#total {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #fff;
+}
